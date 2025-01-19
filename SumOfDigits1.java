@@ -6,7 +6,7 @@ public class SumOfDigits1 {
 		int num=12345;
 		int output = sumOfDigits(num);
 		System.out.println("Sum of digit is :"+output);
-		
+	
 	}
 
 	private static int sumOfDigits(int num) {
