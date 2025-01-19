@@ -5,8 +5,8 @@ public class SumOfDigits1 {
 	public static void main(String[] args) {
 		int num=12345;
 		int output = sumOfDigits(num);
-		System.out.println("Printing output :" + output);
-		
+		System.out.println("Sum of digit is :"+output);
+	
 	}
 
 	private static int sumOfDigits(int num) {
