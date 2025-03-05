@@ -1,0 +1,33 @@
+package Leetcodeproblems;
+
+public class ValidParenthisis {
+
+	public static void main(String[] args) {
+		
+		String input= "([{]})";
+		
+		System.out.println(validparenthisis(input));
+
+	}
+
+	public static boolean validparenthisis(String input) {
+		
+		while(true) {
+			if(input.contains("()")) {
+				input =input.replace("()", "");
+			}
+			else if(input.contains("{}")) {
+				input =input.replace("{}", "");
+			}
+			else if(input.contains("[]")) {
+				input = input.replace("[]", "");
+			}
+			else {
+				return input.isEmpty();
+			}
+		}
+		
+		
+	}
+
+}
