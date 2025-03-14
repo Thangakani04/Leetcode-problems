@@ -1,0 +1,21 @@
+class Solution {
+    public int majorityElement(int[] nums) {
+
+        HashMap<Integer,Integer> hs = new HashMap<Integer,Integer>();
+
+        for(int n:nums){
+            hs.put(n, hs.getOrDefault(n,0)+1);
+        }
+
+        int maj = nums.length/2;
+
+        for(int m :hs.keySet()){
+           if(hs.get(m) > maj){
+            maj = m;
+           }
+        }
+
+        return maj;
+        
+    }
+}
